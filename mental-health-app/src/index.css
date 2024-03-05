@@ -1,27 +1,63 @@
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  margin: 0; 
-  padding: 0; 
-  
 }
-
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-    
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 
-.main-img{
-  height:400px;
-  width:750px;
- 
+.landing-page {
+  padding: 20px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+
+.main-img {
+  border-radius: 25px; 
+  mask-image: linear-gradient(to bottom, transparent, #973D22 0%, #973D22 85%, transparent); 
+  max-width: 100%; 
+  height: auto; 
+  position: relative;
+  bottom:5rem;
+  height: 25rem;
+}
+
+
+.slogan {
+  font-size: 4vw; 
+  color: #973D22;
+  text-align: center; 
+  bottom:10rem;
+  position: relative;
+}
+
+.sub-slogan {
+  font-size: 1.5vw; 
+  color: #973D22;
+  text-align: center; 
+  margin-bottom: 20px; 
+  position: relative;
+  bottom:8.5rem;
+  width:45rem;
+}
+
+
+
+element.style {
+  color: rgb(151, 61, 34);
+  height: 35px;
+  transition: color 0.3s ease 0s;
+
 }
 
