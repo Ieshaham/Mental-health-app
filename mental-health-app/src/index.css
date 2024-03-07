@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 
 body {
   margin: 0;
@@ -29,35 +31,37 @@ code {
   max-width: 100%; 
   height: auto; 
   position: relative;
-  bottom:5rem;
-  height: 25rem;
+  bottom:3rem;
+  height: 23rem;
 }
 
 
 .slogan {
-  font-size: 4vw; 
-  color: #973D22;
+  font-size: 5vw; 
+  color: #87512D;
   text-align: center; 
-  bottom:10rem;
+  bottom:4rem;
   position: relative;
 }
 
 .sub-slogan {
-  font-size: 1.5vw; 
-  color: #973D22;
+  font-size: 2vw; 
+  color: #87512D;
   text-align: center; 
   margin-bottom: 20px; 
   position: relative;
-  bottom:8.5rem;
+  bottom:3rem;
   width:45rem;
 }
 
 
 
-element.style {
-  color: rgb(151, 61, 34);
-  height: 35px;
-  transition: color 0.3s ease 0s;
+.icon{
+  color:black;
 
 }
+ .icon:hover{
+  color:#973D22;
+ }
 
+ 
