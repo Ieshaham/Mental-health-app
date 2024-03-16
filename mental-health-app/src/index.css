@@ -65,3 +65,27 @@ code {
  }
 
  
+#navbarNavDropdown{
+  justify-content: end;
+  align-items: end;
+  
+}
+
+/* button{
+  background-color: black;
+} */
+
+.card-container {
+  display: flex; /* Use Flexbox to arrange cards in a row */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  white-space: nowrap; /* Prevent cards from wrapping to the next line */
+margin:auto;
+}
+
+.card {
+  flex: 0 0 auto; /* Ensure cards do not grow or shrink and maintain their initial size */
+  width: 500px; /* Set a fixed width for each card */
+  margin-right: 20px; /* Add some spacing between cards */
+ 
+}
+
