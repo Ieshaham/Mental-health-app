@@ -31,26 +31,26 @@ code {
   max-width: 100%; 
   height: auto; 
   position: relative;
-  bottom:3rem;
+
   height: 23rem;
 }
 
 
 .slogan {
   font-size: 5vw; 
-  color: #87512D;
+  color: #973D22;
   text-align: center; 
-  bottom:4rem;
   position: relative;
+  top:15px;
 }
 
 .sub-slogan {
   font-size: 2vw; 
-  color: #87512D;
+  color: #973D22;
   text-align: center; 
   margin-bottom: 20px; 
   position: relative;
-  bottom:3rem;
+  top:15px;
   width:45rem;
 }
 
@@ -79,13 +79,21 @@ code {
   display: flex; /* Use Flexbox to arrange cards in a row */
   overflow-x: auto; /* Enable horizontal scrolling if needed */
   white-space: nowrap; /* Prevent cards from wrapping to the next line */
-margin:auto;
+  align-content: center;
+  justify-content: space-around;
+  position: relative;
+  top: 20px;
+  
 }
 
 .card {
   flex: 0 0 auto; /* Ensure cards do not grow or shrink and maintain their initial size */
-  width: 500px; /* Set a fixed width for each card */
-  margin-right: 20px; /* Add some spacing between cards */
- 
+  width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: normal;
+
+  
 }
+
 
