@@ -3,8 +3,8 @@ import React from 'react';
 const Resources = () => {
     return (
         <div id="resources">
-            <h2>Resources Section</h2>
-            <div className="card-container">
+            <h2 style={{color:"#973D22"}}>Resources</h2>
+            <div className="card-container" >
                 <div className="card" style={{ width: "300px" , borderColor: "#973D22" , backgroundColor: "#F9DBB5"}}>
                     <div className="card-body" >
                 
@@ -32,6 +32,9 @@ const Resources = () => {
                          Whether it's through self-guided resources or connecting with mental health professionals who understand your cultural context, find the support you need to prioritize your mental well-being.</p>
                     </div>
                 </div>
+            </div>
+            <div className='video' style={{display:"flex", justifyContent:"center" , alignItem:"center" }}>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/B1Bn9OWDqF0?si=22xpxXX5TRo5JddB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     );
