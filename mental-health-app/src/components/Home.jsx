@@ -15,8 +15,10 @@ const Home = () => {
     return (
         <div>
             <div className="landing-page">
+                <div className='slogans-on-main'>
                 <h1 className="slogan">From Heritage To Healing</h1>
                 <h2 className="sub-slogan">Embracing Black Womanhood, Inspiring Inner Balance. Your Oasis for Healing and Self-Discovery.</h2>
+                </div>
                 <img className="main-img" src="https://static.vecteezy.com/system/resources/previews/025/464/335/non_2x/portrait-of-a-beautiful-african-woman-in-a-national-headdress-in-profile-illustration-vector.jpg" alt="Description of the image" />
                
             </div>
