@@ -1,5 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBrain } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const handleScroll = (id) => {
@@ -12,6 +14,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light" >
       <div className="container-fluid" >
+      <FontAwesomeIcon icon={faBrain} style={{fontSize:"22px", color:"#973D22"}}/> &nbsp;&nbsp;&nbsp;
         <a className="navbar-brand" href="#" style={{color:"#973D22"}}>SoulSupport </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -24,9 +27,6 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link active" href="#resources" onClick={() => handleScroll('features')} style={{color:"#973D22"}}>Resources</a>
             </li>
-            {/* <li className="nav-item">
-              <a className="nav-link" href="#pricing" onClick={() => handleScroll('pricing')}>Pricing</a>
-            </li> */}
 
               </ul>
             

@@ -1,21 +1,24 @@
 import React from 'react';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Resources from './components/Resources'; 
-import Footer from './components/Footer'
+import Resources from './components/Resources';
+import Footer from './components/Footer';
+import Chatbot from './components/Chatbot';
 
-function App() {
+const App = () => {
   return (
     <div>
       <Navbar />
-      <main >
-        <Home />
-        <Resources />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/chatbot" element={<Chatbot />} />
+      </Routes>
       <Footer />
-      </main>
     </div>
   );
-}
+};
 
 export default App;
+
