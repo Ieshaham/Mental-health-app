@@ -68,6 +68,10 @@ footer {
   padding: 20px;
   text-align: center;
   margin-top: auto; 
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 
 }
 
@@ -144,3 +148,4 @@ a.btn.btn-primary.mt-3:hover {
   color:#973D22;
   border-color: #973D22;
 }
+
