@@ -149,3 +149,61 @@ a.btn.btn-primary.mt-3:hover {
   border-color: #973D22;
 }
 
+.prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; 
+  color: #973D22;
+}
+
+.prompt h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.prompt p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.prompt input {
+  width: 60rem; /* Adjust width as needed */
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.prompt-save-button {
+  width: 15rem; /* Adjust width as needed */
+  padding: 10px;
+  font-size: 16px;
+  background-color: #E9AB48;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prompt-save-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.goback-button{
+  background-color: #973D22;
+  color:#E9AB48;
+  border-color: #973D22;
+  border-radius: 3px;
+  margin: 25px;
+
+}
+
+.goback-button:hover{
+  background-color:#E9AB48;
+  color: #973D22;
+  border-color: #E9AB48;
+}

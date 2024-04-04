@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSmile, faSadTear, faTired, faAngry, faMeh } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import GoBack from './GoBack';
+
 
 const MoodSelector = () => {
   const navigate = useNavigate();
@@ -15,7 +17,7 @@ const MoodSelector = () => {
   };
 
   const handleMoodSelect = (mood) => {
-    navigate('/prompt', { state: { prompt: moodPrompts[mood] } }); // Navigate to '/prompt' route with mood prompt
+    navigate('/prompt', { state: { prompt: moodPrompts[mood] } }); 
   };
 
   const getIcon = (mood) => {
@@ -25,7 +27,7 @@ const MoodSelector = () => {
       case '😞':
         return faSadTear;
       case '😰':
-        return faTired; // Changed from faFaceTired to faTired
+        return faTired; 
       case '😡':
         return faAngry;
       case '😌':
@@ -37,11 +39,12 @@ const MoodSelector = () => {
 
   return (
     <div>
-      <h2 style={{ display: "flex", justifyContent: "center", position: "relative", top: "25px" }}>Select Your Mood</h2>
-      <div style={{ display: "flex", justifyContent: "center", marginTop: "300px" }}>
+          <GoBack />
+      <h2 style={{ display: "flex", justifyContent: "center", position: "relative", top: "25px" , color:"#973D22"}}>Select Your Mood</h2>
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "200px" }}>
         {Object.keys(moodPrompts).map(mood => (
-          <button key={mood} onClick={() => handleMoodSelect(mood)}>
-            <FontAwesomeIcon icon={getIcon(mood)} style={{ height: "100px", color: "#973D22" }} />
+          <button key={mood} onClick={() => handleMoodSelect(mood)} style={{display:"flex", justifyContent:"space-around" , margin:"30px", borderColor:"#973D22", borderRadius:"5px"}}>
+            <FontAwesomeIcon icon={getIcon(mood)} style={{ height: "150px", color: "#973D22"  }} />
           </button>
         ))}
       </div>
