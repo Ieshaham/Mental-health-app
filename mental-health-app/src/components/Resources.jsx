@@ -13,7 +13,7 @@ const Resources = () => {
                         <h5 className="card-title" style={{ color: "#973D22" }}>Culturally Relevant Resources</h5>
                         <p className="card-text" style={{ color: "#973D22" }}>Access a diverse range of culturally sensitive resources tailored to the experiences of Black individuals.
                             From articles to podcasts and meditation videos, find support and guidance that resonates with your cultural background.</p>
-                        <button className="btn btn-primary mt-3">Discover Resources</button>
+                            <Link to="/media" className="btn btn-primary mt-3">Discover Resources</Link>
                     </div>
                 </div>
 
