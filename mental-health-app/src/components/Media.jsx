@@ -20,7 +20,7 @@ const Media = () => {
         const response = await axios.get(
           'https://www.googleapis.com/youtube/v3/search', {
             params: {
-              key: 'AIzaSyB2k6Chi7uEPX1FHkB_mcCKiycOJQOPhDM',
+              key: process.env.REACT_APP_YOUTUBE_API_KEY,
               q: tabQueries[activeTab],
               part: 'snippet',
               maxResults: 20,
