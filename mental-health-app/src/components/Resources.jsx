@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom';
 const Resources = () => {
     return (
         <div id="resources">
-            <h2 style={{ color: "#973D22" }}>Resources</h2>
+            <h2 style={{ color: "#DDD8B8" }}>Resources</h2>
             <div className="card-container">
-                <div className="card" style={{ width: "300px", borderColor: "#973D22", backgroundColor: "white" }}>
+                <div className="card" style={{ width: "300px", borderColor: "#973D22", backgroundColor: "#DDD8B8" }}>
                     <img src='https://static.vecteezy.com/system/resources/previews/002/585/634/original/african-american-woman-meditating-in-lotus-position-healthy-lifestyle-yoga-relax-vector.jpg'
                         style={{ borderRadius: "100px" }} />
                     <div className="card-body">
                         <h5 className="card-title" style={{ color: "#973D22" }}>Culturally Relevant Resources</h5>
                         <p className="card-text" style={{ color: "#973D22" }}>Access a diverse range of culturally sensitive resources tailored to the experiences of Black individuals.
                             From articles to podcasts and meditation videos, find support and guidance that resonates with your cultural background.</p>
-                            <Link to="/media" className="btn btn-primary mt-3">Discover Resources</Link>
+                        <Link to="/media" className="btn btn-primary mt-3">Discover Resources</Link>
                     </div>
                 </div>
 
-                <div className="card" style={{ width: "300px", borderColor: "#973D22", backgroundColor: "white" }}>
+                <div className="card" style={{ width: "300px", borderColor: "#973D22", backgroundColor: "#DDD8B8" }}>
                     <img src='https://th.bing.com/th/id/OIP._IEhyxo5FmxZkbQUgQqazgAAAA?rs=1&pid=ImgDetMain' />
                     <div className="card-body">
                         <h5 className="card-title" style={{ color: "#973D22" }}>Supportive Community</h5>
@@ -27,7 +27,7 @@ const Resources = () => {
                     </div>
                 </div>
 
-                <div className="card" style={{ width: "300px", borderColor: "#973D22", backgroundColor: "white" }}>
+                <div className="card" style={{ width: "300px", borderColor: "#973D22", backgroundColor: "#DDD8B8" }}>
                     <img src='https://th.bing.com/th/id/OIP.drPpz46lN-gK9ElXRGfRFAHaHa?rs=1&pid=ImgDetMain' />
                     <div className="card-body">
                         <h5 className="card-title" style={{ color: "#973D22" }}>Personalized Support</h5>

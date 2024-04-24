@@ -12,25 +12,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" >
-      <div className="container-fluid" >
-      <FontAwesomeIcon icon={faBrain} style={{fontSize:"22px", color:"#973D22"}}/> &nbsp;&nbsp;&nbsp;
-        <a className="navbar-brand" href="#" style={{color:"#973D22"}}>SoulSupport </a>
+    <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#DDD8B8" }}>
+      <div className="container-fluid">
+        <FontAwesomeIcon icon={faBrain} style={{ fontSize: "22px", color: "black" }} /> &nbsp;&nbsp;&nbsp;
+        <a className="navbar-brand" href="#" style={{ color: "black" }}>SoulSupport</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#" style={{color:"#973D22"}}>Home</a>
+              <a className="nav-link active" aria-current="page" href="#" style={{ color: "black" }}>Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="#resources" onClick={() => handleScroll('features')} style={{color:"#973D22"}}>Resources</a>
+              <a className="nav-link active" href="#resources" onClick={() => handleScroll('features')} style={{ color: "black" }}>Resources</a>
             </li>
 
-              </ul>
-            
-         
+          </ul>
         </div>
       </div>
     </nav>

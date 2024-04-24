@@ -6,6 +6,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 /* Header styles */
@@ -24,41 +25,66 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
+  background-color: black;
 }
 
 /* Main image styles */
 .main-img {
   border-radius: 25px;
   mask-image: linear-gradient(to bottom, transparent, #973D22 0%, #973D22 85%, transparent);
-  max-width: 100%; /* Ensure image is responsive */
-  height: 30rem; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Add space below the image */
+  max-width: 100%;
+  /* Ensure image is responsive */
+  height: 30rem;
+  /* Maintain aspect ratio */
+  margin-bottom: 20px;
+  /* Add space below the image */
 }
 
 /* Slogan styles */
 .slogan {
   font-size: 50px;
-  color: #973D22;
+  color: #DDD8B8;
   text-align: center;
-  margin-bottom: 10px; /* Add space below the slogan */
+  margin-bottom: 10px;
+  /* Add space below the slogan */
+}
+
+.container {
+  width: 200px;
+  /* Adjust as needed */
+  height: 200px;
+  /* Adjust as needed */
+  perspective: 800px;
+  /* Adjust perspective for 3D effect */
+}
+
+
+
+
+img {
+  height: 300px;
+
 }
 
 /* Sub-slogan styles */
 .sub-slogan {
   font-size: 1.5rem;
-  color: #973D22;
+  color: #DDD8B8;
   text-align: center;
-  margin-bottom: 20px; /* Add space below the sub-slogan */
+  margin-bottom: 20px;
+  /* Add space below the sub-slogan */
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .slogan {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.5rem;
+    /* Adjust font size for smaller screens */
   }
 
   .sub-slogan {
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    font-size: 1.2rem;
+    /* Adjust font size for smaller screens */
   }
 }
 
@@ -67,7 +93,7 @@ footer {
   background-color: #F8F9FA;
   padding: 20px;
   text-align: center;
-  margin-top: auto; 
+  margin-top: auto;
   padding: 20px;
   position: fixed;
   bottom: 0;
@@ -75,30 +101,48 @@ footer {
 
 }
 
-.container-fluid-footer{
-  color:#973D22;
+.container-fluid-footer {
+  color: #973D22;
   background-color: #F8F9FA;
 
 }
 
 
 
- 
-#navbarNavDropdown{
+
+#navbarNavDropdown {
   justify-content: end;
   align-items: end;
-  
+
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulsate-brain {
+  animation: pulse 2s infinite alternate;
 }
 
 .card-container {
-  display: flex; 
-  overflow-x: auto; 
-  white-space: nowrap; 
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
   align-content: center;
   justify-content: space-around;
   position: relative;
   top: 20px;
-  
+
 }
 
 .card-body {
@@ -110,17 +154,17 @@ footer {
 }
 
 .card {
-  flex: 0 0 auto; 
+  flex: 0 0 auto;
   width: 100%;
   overflow: hidden;
   word-wrap: break-word;
   white-space: normal;
 }
 
-.video{
+.video {
   margin: 8rem;
 }
-  
+
 button.btn.btn-primary.mt-3 {
   background-color: #973D22;
   border-color: #F9DBB5;
@@ -131,7 +175,7 @@ button.btn.btn-primary.mt-3 {
 
 button.btn.btn-primary.mt-3:hover {
   background-color: antiquewhite;
-  color:#973D22;
+  color: #973D22;
   border-color: #973D22;
 }
 
@@ -145,7 +189,7 @@ a.btn.btn-primary.mt-3 {
 
 a.btn.btn-primary.mt-3:hover {
   background-color: antiquewhite;
-  color:#973D22;
+  color: #973D22;
   border-color: #973D22;
 }
 
@@ -154,7 +198,7 @@ a.btn.btn-primary.mt-3:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px; 
+  margin-top: 50px;
   color: #973D22;
 }
 
@@ -169,7 +213,8 @@ a.btn.btn-primary.mt-3:hover {
 }
 
 .prompt input {
-  width: 60rem; /* Adjust width as needed */
+  width: 60rem;
+  /* Adjust width as needed */
   padding: 10px;
   font-size: 16px;
   margin-bottom: 20px;
@@ -178,7 +223,8 @@ a.btn.btn-primary.mt-3:hover {
 }
 
 .prompt-save-button {
-  width: 15rem; /* Adjust width as needed */
+  width: 15rem;
+  /* Adjust width as needed */
   padding: 10px;
   font-size: 16px;
   background-color: #E9AB48;
@@ -193,17 +239,17 @@ a.btn.btn-primary.mt-3:hover {
   cursor: not-allowed;
 }
 
-.goback-button{
+.goback-button {
   background-color: #973D22;
-  color:#E9AB48;
+  color: #E9AB48;
   border-color: #973D22;
   border-radius: 3px;
   margin: 25px;
 
 }
 
-.goback-button:hover{
-  background-color:#E9AB48;
+.goback-button:hover {
+  background-color: #E9AB48;
   color: #973D22;
   border-color: #E9AB48;
 }
