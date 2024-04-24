@@ -20,59 +20,36 @@ body {
 /* Landing page styles */
 .landing-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
   background-color: black;
 }
 
-/* Main image styles */
-.main-img {
-  border-radius: 25px;
-  mask-image: linear-gradient(to bottom, transparent, #973D22 0%, #973D22 85%, transparent);
-  max-width: 100%;
-  /* Ensure image is responsive */
-  height: 30rem;
-  /* Maintain aspect ratio */
-  margin-bottom: 20px;
-  /* Add space below the image */
-}
+
 
 /* Slogan styles */
 .slogan {
-  font-size: 50px;
-  color: #DDD8B8;
-  text-align: center;
-  margin-bottom: 10px;
-  /* Add space below the slogan */
-}
-
-.container {
-  width: 200px;
-  /* Adjust as needed */
-  height: 200px;
-  /* Adjust as needed */
-  perspective: 800px;
-  /* Adjust perspective for 3D effect */
-}
-
-
-
-
-img {
-  height: 300px;
+  font-size: 40px;
+  color: white;
+ z-index: 2;
+ position: relative;
+ left:12rem;
+top:10rem;
 
 }
 
-/* Sub-slogan styles */
+
+
 .sub-slogan {
-  font-size: 1.5rem;
+  font-size: 20px;
   color: #DDD8B8;
-  text-align: center;
-  margin-bottom: 20px;
-  /* Add space below the sub-slogan */
+  z-index: 2;
+  position: relative;
+  left:12rem;
+ top:10rem;
+
 }
 
 /* Media query for smaller screens */
@@ -88,9 +65,47 @@ img {
   }
 }
 
+.container {
+  width: 200px;
+  /* Adjust as needed */
+  height: 200px;
+  /* Adjust as needed */
+  perspective: 800px;
+  /* Adjust perspective for 3D effect */
+}
+
+button.signup,button.login{
+  position: relative;
+  top:5px;
+  border-radius: 8px;
+  border-color: #4B4994;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding:7px;
+  background-color:#4B4994;
+  color: white ;
+  
+}
+
+button.login:hover{
+  background-color:white;
+  color: #4b4994;
+}
+
+button.signup:hover{
+  background-color:white;
+  color: #4b4994;
+}
+
+
+img {
+  height: 300px;
+
+}
+
 
 footer {
-  background-color: #F8F9FA;
+  background-color: #a8a8af;
   padding: 20px;
   text-align: center;
   margin-top: auto;
@@ -102,13 +117,20 @@ footer {
 }
 
 .container-fluid-footer {
-  color: #973D22;
-  background-color: #F8F9FA;
+  color: white;
+  background-color: #a8a8af;
 
 }
 
 
+.pulsate-brain{
+  height: 600px;
+  width:950px;
+  position: relative;
+  right:12rem;
 
+
+}
 
 #navbarNavDropdown {
   justify-content: end;
@@ -116,24 +138,23 @@ footer {
 
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.05);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+.statements{
+  display: flex;
+  flex-direction: row;
+  background-color: #a8a8af;
+  height: 16rem;
+  color: white;
+  
 }
 
-.pulsate-brain {
-  animation: pulse 2s infinite alternate;
-}
+p.mission,p.purpose{
+  margin-right: 35px;
 
+}
+.mission-statement,.purpose-statement{
+  margin-left:35px;
+  
+}
 .card-container {
   display: flex;
   overflow-x: auto;
@@ -166,31 +187,31 @@ footer {
 }
 
 button.btn.btn-primary.mt-3 {
-  background-color: #973D22;
-  border-color: #F9DBB5;
+  background-color: #4b4994;
+  border-color: #4b4994;
   justify-content: center;
   align-items: center;
 
 }
 
 button.btn.btn-primary.mt-3:hover {
-  background-color: antiquewhite;
-  color: #973D22;
-  border-color: #973D22;
+  background-color: #a8a8af;
+  color: #4b4994;
+  border-color: #4b4994;
 }
 
 a.btn.btn-primary.mt-3 {
-  background-color: #973D22;
-  border-color: #F9DBB5;
+  background-color: #4b4994;
+  border-color: #4b4994;
   justify-content: center;
   align-items: center;
 
 }
 
 a.btn.btn-primary.mt-3:hover {
-  background-color: antiquewhite;
-  color: #973D22;
-  border-color: #973D22;
+  background-color: #a8a8af;
+  color: #4b4994;
+  border-color: #4b4994;
 }
 
 .prompt {
