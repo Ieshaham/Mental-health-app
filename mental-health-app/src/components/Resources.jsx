@@ -37,7 +37,7 @@ const Resources = () => {
                     </div>
                 </div>
             </div>
-            <div className='video' style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div className='video' style={{ display: "flex", justifyContent: "center", alignItems: "center", backgroundColor:"#a8a8af", height:"400px", width:"auto" }}>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/B1Bn9OWDqF0?si=22xpxXX5TRo5JddB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
         </div>

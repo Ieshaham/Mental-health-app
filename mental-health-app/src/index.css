@@ -214,13 +214,19 @@ a.btn.btn-primary.mt-3:hover {
   border-color: #4b4994;
 }
 
+button.prompt-button:hover{
+  transform: scale(1.1); /* Increase size on hover */
+  background-color: #4b4994;
+ 
+
+}
 .prompt {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  color: #973D22;
+  color: #4b4994;
 }
 
 .prompt h2 {
@@ -248,7 +254,7 @@ a.btn.btn-primary.mt-3:hover {
   /* Adjust width as needed */
   padding: 10px;
   font-size: 16px;
-  background-color: #E9AB48;
+  background-color: #a8a8af;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -261,16 +267,16 @@ a.btn.btn-primary.mt-3:hover {
 }
 
 .goback-button {
-  background-color: #973D22;
-  color: #E9AB48;
-  border-color: #973D22;
+  background-color: #4b4994;
+  color: #a8a8af;
+  border-color: #4b4994;
   border-radius: 3px;
   margin: 25px;
 
 }
 
 .goback-button:hover {
-  background-color: #E9AB48;
-  color: #973D22;
-  border-color: #E9AB48;
+  background-color: #a8a8af;
+  color: #4b4994;
+  border-color: #a8a8af;
 }
