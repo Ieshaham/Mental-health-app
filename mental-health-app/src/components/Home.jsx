@@ -16,23 +16,26 @@ const Home = () => {
     };
     return (
         <div>
-            <div className="landing-page">
-                <div className='slogans-on-main'>
-                    <h1 className="slogan">From Heritage To Healing</h1>
-                    <h2 className="sub-slogan">Embracing Black Womanhood, Inspiring Inner Balance. Your Oasis for Healing and Self-Discovery.
+        <div className="home">
+            <div className="slogans-and-gif-container">
+                <div className="slogans">
+                    <div style={{backgroundColor:"#FFFCF2",position:"relative",top:"7rem", left:"15rem",width:"30rem" ,height:"25rem",zIndex:"3",padding:"10px", borderRadius:"15px"}}>
+                    <h1 className="slogan" >From Heritage To Healing</h1>
+                    <h2 className="sub-slogan">Embracing Black Womanhood, Inspiring Inner Balance. Your Oasis for Healing and Self-Discovery.</h2>
                     <div className='main-button'>
-                <button className='signup'>Sign Up</button>
-                <button className='login'>Log In</button>
+                        <button className='signup'>Sign Up</button>
+                        <button className='login'>Log In</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="gif-container">
+                    <img src="https://executivefunctionsummit.com/wp-content/uploads/2022/05/Brain-Background-1.gif" alt="Brain Image" className="pulsate-brain" />
+                </div>
             </div>
-                    
-                    </h2>
-                   
-                </div>
-                
-                <img src="https://executivefunctionsummit.com/wp-content/uploads/2022/05/Brain-Background-1.gif" alt="Brain Image" className="pulsate-brain" />
-                </div>
-                <Mission />
-                <Resources />
+            </div>
+            <Mission />
+            <Resources />
         </div>
     );
 };
