@@ -17,107 +17,36 @@ body {
   text-align: center;
 }
 
-/* Landing page styles */
-.landing-page {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  min-height: 65vh;
-  /* padding: 10px; */
-  background-color: black;
+
+/* CSS for the home component */
+.home {
   position: relative;
-  left: 175px;
-  width: 15rem;
+  background-color: #FFFCF2;
   
 }
-    
-.home{
-  display: flex;
-  flex-direction: row;
-  background-color: black;
-}
 
-
-.slogans{
-  width:400px;
-  background-color: black;
-}
-
-
-/* Slogan styles */
-.slogan {
-  font-size: 40px;
-  color: #4b4994;
- position: relative; 
- font-family: "Noto Serif JP", serif;
- font-weight: 400;
-  padding: 20px; 
-}
-
-.sub-slogan {
-  font-size: 20px;
-  color: #4b4994;
-  font-family: "Noto Serif JP", serif;
-  font-weight: 400;
-  font-style: normal;
-  margin:15px;
+.soul-support-container {
+  width: 50vw; /* Width covers half of the screen */
+  height: calc(65vh - 20px); /* Height is 65% of the screen minus 20 pixels (for margin or padding) */
+  overflow: hidden;
+  position: relative;
  
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .slogan {
-    font-size: 1.5rem;
-    /* Adjust font size for smaller screens */
-  }
-
-  .sub-slogan {
-    font-size: 1.2rem;
-    /* Adjust font size for smaller screens */
-  }
+.health-pic {
+  width: 100%; /* Cover the entire width of the container */
+  height: 100%; /* Cover the entire height of the container */
+  object-fit: cover;
 }
 
-.container {
-  width: 200px;
-  /* Adjust as needed */
-  height: 200px;
-  /* Adjust as needed */
-  perspective: 800px;
-  /* Adjust perspective for 3D effect */
-}
-
-button.signup,button.login{
-  position: relative;
-  top:15px;
-  border-radius: 8px;
-  border-color: #4b4994;
-  padding:7px;
-  background-color:#4b4994;
-  color: #FFFCF2 ;
-  justify-content: space-around;
-}
-
-button.login:hover{
-  background-color:#FFFCF2;
-  color: #4b4994;
-}
-
-button.signup:hover{
-  background-color:#FFFCF2;
-  color: #4b4994;
-}
-
-.main-button{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-img {
-  height: 300px;
-
+.soul-support-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+ 
 }
 
 
@@ -134,7 +63,7 @@ footer {
 }
 
 .container-fluid-footer {
-  color: #4b4994;
+  color: #466730;
   background-color: #FFFCF2;
 
 }
@@ -150,76 +79,48 @@ footer {
   position: relative;
   left:15rem;
  
-
-
-  
 }
 
-.slogans-and-gif-container {
-  display: flex;
-  z-index: 2;
-  background-color:black ;
-
-}
-
-.pulsate-brain {
-  max-width: 100%; 
-  height: 40rem; 
-  
- 
-}
 
 #navbarNavDropdown {
   justify-content: end;
   align-items: end;
-
 }
 
 .statements{
   display: flex;
   flex-direction: row;
   background-color: #FFFCF2;
-  height: 16rem;
-  color: #4b4994;
-  position: relative;
-
-  
+  height: 14rem;
+  color: #466730;
+  align-items: center;
 }
 
 p.mission,p.purpose{
   margin-right: 35px;
-
 }
+
 .mission-statement,.purpose-statement{
   margin-left:35px;
-  
 }
+  
 .card-container {
   display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  align-content: center;
   justify-content: center;
-
-  position: relative;
-  top: 20px;
-
-
-
 }
 
 .card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  bottom: 5px;
+
+ 
 }
 
 .card {
   flex: 0 0 auto;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; 
   word-wrap: break-word;
   white-space: normal;
 }
@@ -228,37 +129,24 @@ p.mission,p.purpose{
   margin: 8rem;
 }
 
-button.btn.btn-primary.mt-3 {
-  background-color: #4b4994;
-  border-color: #4b4994;
-  justify-content: center;
-  align-items: center;
 
-}
-
-button.btn.btn-primary.mt-3:hover {
-  background-color: #a8a8af;
-  color: #4b4994;
-  border-color: #4b4994;
-}
 
 a.btn.btn-primary.mt-3 {
-  background-color: #4b4994;
-  border-color: #4b4994;
+  background-color: #466730;
+  border-color: #466730;
   justify-content: center;
   align-items: center;
-
 }
 
 a.btn.btn-primary.mt-3:hover {
-  background-color: #a8a8af;
-  color: #4b4994;
-  border-color: #4b4994;
+  background-color: #FFFCF2;
+  color: #466730;
+  border-color: #466730;
 }
 
 button.prompt-button:hover{
   transform: scale(1.1); /* Increase size on hover */
-  background-color: #4b4994;
+  background-color: #FFFCF2;
  
 
 }
@@ -268,7 +156,7 @@ button.prompt-button:hover{
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  color: #4b4994;
+  color: #466730;
 }
 
 .prompt h2 {
@@ -296,7 +184,7 @@ button.prompt-button:hover{
   /* Adjust width as needed */
   padding: 10px;
   font-size: 16px;
-  background-color: #a8a8af;
+  background-color: #FFFCF2;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -309,16 +197,106 @@ button.prompt-button:hover{
 }
 
 .goback-button {
-  background-color: #4b4994;
-  color: #a8a8af;
-  border-color: #4b4994;
+  background-color: #466730;
+  color: #FFFCF2;
+  border-color: #466730;
   border-radius: 3px;
   margin: 25px;
 
 }
 
 .goback-button:hover {
-  background-color: #a8a8af;
-  color: #4b4994;
-  border-color: #a8a8af;
+  background-color: #FFFCF2;
+  color: #466730;
+  border-color: #FFFCF2;
+  border-color: #466730;
+}
+
+
+
+/* api page css */
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #606060;
+}
+
+.tabs button.active {
+  color: #ff0000; /* Change color to match YouTube's accent color */
+}
+
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+
+.video-item iframe {
+  width: 100%;
+  height: 200px;
+  
+}
+
+.video-item h3 {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.video-item p {
+  margin: 0 10px 10px;
+  font-size: 14px;
+  color: #606060;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add margin to the top */
+}
+
+.pagination button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 5px; /* Add margin between buttons */
+  font-size: 14px;
+  color: #606060;
+}
+
+.pagination button.active {
+  color: #ff0000; /* Change color to match YouTube's accent color */
+}
+
+
+/* GEMINI CHATBOT */
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.loading {
+  font-style: italic;
+  color: #666;
 }

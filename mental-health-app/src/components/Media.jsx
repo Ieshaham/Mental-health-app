@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import GoBack from './GoBack';
@@ -13,6 +11,8 @@ const Media = () => {
 
   const [activeTab, setActiveTab] = useState('meditation');
   const [videos, setVideos] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const videosPerPage = 6; // Number of videos per page
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -23,7 +23,7 @@ const Media = () => {
               key: process.env.REACT_APP_YOUTUBE_API_KEY,
               q: tabQueries[activeTab],
               part: 'snippet',
-              maxResults: 20,
+              maxResults: 50, // Fetch more videos to accommodate pagination
               type: 'video'
             }
           }
@@ -37,13 +37,22 @@ const Media = () => {
     fetchVideos();
   }, [activeTab]);
 
+  // Get current videos
+  const indexOfLastVideo = currentPage * videosPerPage;
+  const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
+  const currentVideos = videos.slice(indexOfFirstVideo, indexOfLastVideo);
+
+  // Change page
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
   const handleTabClick = tab => {
     setActiveTab(tab);
+    setCurrentPage(1); // Reset current page when changing tabs
   };
 
   return (
     <div>
-        <GoBack />
+      <GoBack />
       <div className="tabs">
         <button
           className={activeTab === 'meditation' ? 'active' : ''}
@@ -65,7 +74,7 @@ const Media = () => {
         </button>
       </div>
       <div className="videos-container">
-        {videos.map(video => (
+        {currentVideos.map(video => (
           <div key={video.id.videoId} className="video-item">
             <iframe
               title={video.snippet.title}
@@ -80,10 +89,19 @@ const Media = () => {
           </div>
         ))}
       </div>
+      <div className="pagination">
+        {Array.from({ length: Math.ceil(videos.length / videosPerPage) }, (_, i) => (
+          <button
+            key={i}
+            className={currentPage === i + 1 ? 'active' : ''}
+            onClick={() => paginate(i + 1)}
+          >
+            {i + 1}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
-
-
 
 export default Media;

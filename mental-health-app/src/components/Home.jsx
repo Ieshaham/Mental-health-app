@@ -1,3 +1,6 @@
+
+
+
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleDown } from '@fortawesome/free-solid-svg-icons';
@@ -17,22 +20,13 @@ const Home = () => {
     return (
         <div>
         <div className="home">
-            <div className="slogans-and-gif-container">
-                <div className="slogans">
-                    <div style={{backgroundColor:"#FFFCF2",position:"relative",top:"7rem", left:"15rem",width:"30rem" ,height:"25rem",zIndex:"3",padding:"10px", borderRadius:"15px"}}>
-                    <h1 className="slogan" >From Heritage To Healing</h1>
-                    <h2 className="sub-slogan">Embracing Black Womanhood, Inspiring Inner Balance. Your Oasis for Healing and Self-Discovery.</h2>
-                    <div className='main-button'>
-                        <button className='signup'>Sign Up</button>
-                        <button className='login'>Log In</button>
-                        </div>
-
-                    </div>
-                </div>
-                <div className="gif-container">
-                    <img src="https://executivefunctionsummit.com/wp-content/uploads/2022/05/Brain-Background-1.gif" alt="Brain Image" className="pulsate-brain" />
-                </div>
-            </div>
+         
+             
+                <div className="soul-support-container">
+   
+                
+                    <img className='health-pic' src='https://img.freepik.com/free-photo/medium-shot-woman-laying-grass_23-2149080962.jpg?t=st=1714172947~exp=1714176547~hmac=2f2ecac87ec6ce490d9b6865309609af54f6ec19605a75888dfa8ce4ce2b9cc5&w=1380'/>
+</div>
             </div>
             <Mission />
             <Resources />

@@ -9,6 +9,7 @@ import MoodPrompt from './components/MoodPrompt';
 import Chatbot from './components/Chatbot';
 import Media from './components/Media';
 import Mission from './components/Mission';
+import Gemini from './components/Gemini';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/mood" element={<MoodSelector />} />
         <Route path="/prompt" element={<MoodPrompt />} /> 
         <Route path="/media" element={<Media />} /> 
+        <Route path="/gemini" element={<Gemini />} />
       </Routes>
       <Footer />
     </div>

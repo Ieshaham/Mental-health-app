@@ -40,11 +40,11 @@ const MoodSelector = () => {
   return (
     <div>
           <GoBack />
-      <h2 style={{ display: "flex", justifyContent: "center", position: "relative", top: "25px" , color:"#4b4994"}}>Select Your Mood</h2>
+      <h2 style={{ display: "flex", justifyContent: "center", position: "relative", top: "25px" , color:"#466730"}}>Select Your Mood</h2>
       <div style={{ display: "flex", justifyContent: "center", marginTop: "100px" }}>
         {Object.keys(moodPrompts).map(mood => (
-          <button className="prompt-button" key={mood} onClick={() => handleMoodSelect(mood)} style={{display:"flex", justifyContent:"space-around", margin:"10px", borderColor:"#4B4994", borderRadius:"5px"}}>
-            <FontAwesomeIcon icon={getIcon(mood)} style={{ height: "150px", color: "#a8a8af"  }} />
+          <button className="prompt-button" key={mood} onClick={() => handleMoodSelect(mood)} style={{display:"flex", justifyContent:"space-around", margin:"10px", borderColor:"#466730", borderRadius:"5px"}}>
+            <FontAwesomeIcon icon={getIcon(mood)} style={{ height: "150px", color: "#466730"  }} />
           </button>
         ))}
       </div>
