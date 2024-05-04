@@ -49,18 +49,18 @@ body {
  
 }
 
-
 footer {
-  background-color: #FFFCF2;
-  padding: 20px;
-  text-align: center;
-  margin-top: auto;
-  padding: 20px;
   position: fixed;
   bottom: 0;
   width: 100%;
-
+  background-color: #FFFCF2;
+  color: #466730;
+  padding: 10px;
+  text-align: center;
 }
+
+
+
 
 .container-fluid-footer {
   color: #466730;
@@ -208,7 +208,6 @@ button.prompt-button:hover{
 .goback-button:hover {
   background-color: #FFFCF2;
   color: #466730;
-  border-color: #FFFCF2;
   border-color: #466730;
 }
 
@@ -291,12 +290,80 @@ button.prompt-button:hover{
 
 /* GEMINI CHATBOT */
 
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-}
 
 .loading {
   font-style: italic;
   color: #666;
+}
+
+.gemini-container {
+  position: relative; /* Ensure relative positioning for absolute positioning within */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+}
+
+.messages {
+  flex: 1; /* Allow messages container to expand to fill remaining space */
+  overflow-y: auto; /* Add scrollbar for overflow */
+  margin: 0 150px;
+}
+
+.user-input-container {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 60%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+
+.user-input {
+  flex: 1; /* Allow input to expand to fill remaining space */
+  border: 2px solid #466730;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.send-button {
+  background-color: #466730;
+  color: #FFFCF2;
+  border-color: #466730;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0;
+  font-size: 18px;
+  height: 45px;
+  width: 50px;
+
+}
+
+
+.send-button:hover {
+  background-color: #FFFCF2;
+  color: #466730;
+  border-color: #466730;
+}
+
+.user-message {
+  background-color: #466730;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  align-self: flex-end;
+}
+
+.generated-message {
+  background-color: #FFFCF2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  align-self: flex-start;
 }

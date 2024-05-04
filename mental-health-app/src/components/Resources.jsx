@@ -7,7 +7,7 @@ const Resources = () => {
             <h2 style={{ color: "#466730", marginLeft:"30px", marginTop:"20px", fontSize:"20px", fontWeight:"bold"}}>Resources</h2>
             <div className="card-container">
                 <div className="card" style={{ width: "300px", borderColor: "#466730", backgroundColor: "white" }}>
-                    <img src='https://static.vecteezy.com/system/resources/previews/002/585/634/original/african-american-woman-meditating-in-lotus-position-healthy-lifestyle-yoga-relax-vector.jpg'
+                    <img src='https://img.freepik.com/free-vector/flat-online-sport-classes-concept-illustrated_23-2148831601.jpg?t=st=1714773694~exp=1714777294~hmac=224b6b1bf9df93cba1a2dbfe833e9e25053a890de32874df90337c79243d2c14&w=826'
                         style={{ borderRadius: "100px" }} />
                     <div className="card-body">
                         <h5 className="card-title" style={{ color: "#466730" }}>Culturally Relevant Resources</h5>
@@ -18,7 +18,7 @@ const Resources = () => {
                 </div>
 
                 <div className="card" style={{ width: "300px", borderColor: "#466730", backgroundColor: "white" }}>
-                    <img src='https://th.bing.com/th/id/OIP._IEhyxo5FmxZkbQUgQqazgAAAA?rs=1&pid=ImgDetMain'  style={{ borderRadius: "100px" }} /> 
+                    <img src='https://img.freepik.com/free-vector/save-planet-concept_23-2148529290.jpg?t=st=1714766594~exp=1714770194~hmac=1f4809a083e7cb029a316fb19a5ff54c7ef2021c2f0c2385fa677bf61913d200&w=740'  style={{ borderRadius: "100px" }} /> 
             
                     <div className="card-body">
                         <h5 className="card-title" style={{ color: "#466730" }}>Supportive Community</h5>
@@ -30,7 +30,7 @@ const Resources = () => {
                 </div>
 
                 <div className="card" style={{ width: "300px", borderColor: "#466730", backgroundColor: "white" }}>
-                    <img src='https://th.bing.com/th/id/OIP.drPpz46lN-gK9ElXRGfRFAHaHa?rs=1&pid=ImgDetMain' />
+                    <img src='https://img.freepik.com/free-vector/flat-people-taking-photos-with-smartphone_23-2149017318.jpg?t=st=1714773432~exp=1714777032~hmac=9a246b4486877263bdb654f0f9d6645f377af8cde2fb7c348864a359d181e0bd&w=826' />
                     <div className="card-body">
                         <h5 className="card-title" style={{ color: "#466730" }}>Personalized Support</h5>
                         <p className="card-text" style={{ color: "#466730" }}>Receive personalized support tailored to your needs.
