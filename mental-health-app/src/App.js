@@ -6,7 +6,7 @@ import Resources from './components/Resources';
 import Footer from './components/Footer';
 import MoodSelector from './components/MoodSelector';
 import MoodPrompt from './components/MoodPrompt'; 
-import Chatbot from './components/Chatbot';
+// import Chatbot from './components/Chatbot';
 import Media from './components/Media';
 import Mission from './components/Mission';
 import Gemini from './components/Gemini';
@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/" element={<Home />} /> 
         <Route path="/mission" element={<Mission />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/chatbot" element={<Chatbot />} />
+        {/* <Route path="/chatbot" element={<Chatbot />} /> */}
         <Route path="/mood" element={<MoodSelector />} />
         <Route path="/prompt" element={<MoodPrompt />} /> 
         <Route path="/media" element={<Media />} /> 

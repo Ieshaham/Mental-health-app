@@ -154,8 +154,8 @@ button.prompt-button:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  
+  margin-top: 15px;
   color: #466730;
 }
 
@@ -174,7 +174,7 @@ button.prompt-button:hover{
   /* Adjust width as needed */
   padding: 10px;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -184,7 +184,7 @@ button.prompt-button:hover{
   /* Adjust width as needed */
   padding: 10px;
   font-size: 16px;
-  background-color: #FFFCF2;
+  background-color: #466730;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -311,7 +311,7 @@ button.prompt-button:hover{
 
 .user-input-container {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 50%;
   transform: translate(-50%, 50%);
   width: 60%;
@@ -361,7 +361,7 @@ button.prompt-button:hover{
 }
 
 .generated-message {
-  background-color: #FFFCF2;
+  background-color: #95da67;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 5px;

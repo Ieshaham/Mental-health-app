@@ -35,7 +35,7 @@ const Resources = () => {
                         <h5 className="card-title" style={{ color: "#466730" }}>Personalized Support</h5>
                         <p className="card-text" style={{ color: "#466730" }}>Receive personalized support tailored to your needs.
                             Whether it's through self-guided resources or connecting with mental health professionals who understand your cultural context, find the support you need to prioritize your mental well-being.</p>
-                        <Link to="/chatbot" className="btn btn-primary mt-3">Get Support Now</Link>
+                        <Link to="/mood" className="btn btn-primary mt-3">Get Support Now</Link>
                     </div>
                 </div>
             </div>
