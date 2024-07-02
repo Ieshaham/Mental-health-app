@@ -21,7 +21,7 @@ body {
 /* CSS for the home component */
 .home {
   position: relative;
-  background-color: #FFFCF2;
+  background-color: #FFFFFF;
   
 }
 
@@ -53,8 +53,8 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #FFFCF2;
-  color: #466730;
+  background-color: #CFC8EF;
+  color: #210162;
   padding: 10px;
   text-align: center;
 }
@@ -63,8 +63,8 @@ footer {
 
 
 .container-fluid-footer {
-  color: #466730;
-  background-color: #FFFCF2;
+  color: #210162;
+  background-color: #CFC8EF;
 
 }
 
@@ -90,9 +90,9 @@ footer {
 .statements{
   display: flex;
   flex-direction: row;
-  background-color: #FFFCF2;
+  background-color: #CFC8EF;
   height: 14rem;
-  color: #466730;
+  color: #210162;
   align-items: center;
 }
 
@@ -132,69 +132,18 @@ p.mission,p.purpose{
 
 
 a.btn.btn-primary.mt-3 {
-  background-color: #466730;
-  border-color: #466730;
+  background-color: #210162;
+  border-color: #210162;
   justify-content: center;
   align-items: center;
 }
 
 a.btn.btn-primary.mt-3:hover {
   background-color: #FFFCF2;
-  color: #466730;
-  border-color: #466730;
+  color: #210162;
+  border-color: #210162;
 }
 
-button.prompt-button:hover{
-  transform: scale(1.1); /* Increase size on hover */
-  background-color: #FFFCF2;
- 
-
-}
-.prompt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  margin-top: 15px;
-  color: #466730;
-}
-
-.prompt h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.prompt p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.prompt input {
-  width: 60rem;
-  /* Adjust width as needed */
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.prompt-save-button {
-  width: 15rem;
-  /* Adjust width as needed */
-  padding: 10px;
-  font-size: 16px;
-  background-color: #466730;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.prompt-save-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
 
 .goback-button {
   background-color: #466730;
@@ -325,16 +274,16 @@ button.prompt-button:hover{
 
 .user-input {
   flex: 1; /* Allow input to expand to fill remaining space */
-  border: 2px solid #466730;
+  border: 2px solid #210162;
   border-radius: 5px;
   padding: 10px;
   margin-right: 10px;
 }
 
 .send-button {
-  background-color: #466730;
+  background-color: #210162;
   color: #FFFCF2;
-  border-color: #466730;
+  border-color: #210162;
   border-radius: 3px;
   cursor: pointer;
   padding: 0;
@@ -347,12 +296,12 @@ button.prompt-button:hover{
 
 .send-button:hover {
   background-color: #FFFCF2;
-  color: #466730;
-  border-color: #466730;
+  color: #210162;
+  border-color: #210162;
 }
 
 .user-message {
-  background-color: #466730;
+  background-color: #210162;
   color: white;
   padding: 10px;
   border-radius: 5px;
