@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#CFC8EF" , zIndex:"999" }}>
+    <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#FFFFFF" , zIndex:"999" }}>
       <div className="container-fluid">
         <FontAwesomeIcon icon={faBrain} style={{ fontSize: "22px", color: "#210162" }} /> &nbsp;&nbsp;&nbsp;
         <a className="navbar-brand" href="#" style={{ color: "#210162" }}>SoulSupport</a>

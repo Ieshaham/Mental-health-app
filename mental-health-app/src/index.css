@@ -19,41 +19,100 @@ body {
 
 
 /* CSS for the home component */
+/* Home.css */
 .home {
   position: relative;
   background-color: #FFFFFF;
-  
+  padding: 20px;
 }
 
 .soul-support-container {
-  width: 50vw; /* Width covers half of the screen */
-  height: calc(65vh - 20px); /* Height is 65% of the screen minus 20 pixels (for margin or padding) */
-  overflow: hidden;
-  position: relative;
- 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.health-pic-container {
+  flex: 0 0 50%; /* Take up half of the container width */
+  max-width: 50%; /* Ensure image container doesn't exceed half of the container */
+  padding-right: 20px; 
 }
 
 .health-pic {
-  width: 100%; /* Cover the entire width of the container */
-  height: 100%; /* Cover the entire height of the container */
-  object-fit: cover;
+  max-width: 100%; /* Ensure image scales appropriately */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
 }
 
-.soul-support-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
- 
+.main-page-title {
+  flex: 0 0 50%; /* Take up half of the container width */
+  max-width: 50%; /* Ensure title container doesn't exceed half of the container */
+  padding-left: 20px; 
 }
+
+.title-text {
+  font-size: 45px;
+  color: #210162;
+  margin-bottom: 10px; 
+}
+
+.subtitle-text {
+  font-size: 18px;
+  color: #210162;
+  margin-bottom: 20px; 
+}
+
+.button-container {
+  display: flex;
+  gap: 20px; 
+}
+
+button.signup-button,
+button.signin-button {
+  background-color: #210162;
+  border-color: #210162;
+  color: #FFFCF2;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 45px;
+  width: 90px;
+}
+
+button.signup-button:hover,
+button.signin-button:hover {
+  background-color: #FFFCF2;
+  color: #210162;
+  border-color: #210162;
+}
+
+@media (min-width: 768px) {
+  /* Adjust layout for larger screens */
+  .soul-support-container {
+      flex-direction: row; /* Display items side by side on larger screens */
+  }
+
+  .health-pic-container {
+      flex: 0 0 50%; /* Take up half of the container width */
+      max-width: 50%; /* Ensure image container doesn't exceed half of the container */
+      padding-right: 20px; /* Add spacing between health pic and main page title */
+  }
+
+  .main-page-title {
+      flex: 0 0 50%; /* Take up half of the container width */
+      max-width: 50%; /* Ensure title container doesn't exceed half of the container */
+      padding-left: 20px; /* Add spacing between health pic and main page title */
+      font-size: 14px;
+  }
+}
+
 
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #CFC8EF;
+  background-color: #FFFFFF;
   color: #210162;
   padding: 10px;
   text-align: center;
@@ -64,7 +123,7 @@ footer {
 
 .container-fluid-footer {
   color: #210162;
-  background-color: #CFC8EF;
+  background-color: #FFFFFF;
 
 }
 
@@ -87,23 +146,55 @@ footer {
   align-items: end;
 }
 
-.statements{
+
+/* Mission.css (or your preferred CSS file) */
+.statements {
   display: flex;
-  flex-direction: row;
-  background-color: #CFC8EF;
-  height: 14rem;
+  flex-direction: column;
+  gap: 20px; /* Add vertical spacing between mission and purpose statements */
+}
+
+.mission-statement,
+.purpose-statement {
+  background-color: #f9f9f9; /* Optional: Add background color to differentiate sections */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.statement-title {
+  font-size: 18px;
   color: #210162;
-  align-items: center;
+  font-weight: bold;
+  margin-top: 0; /* Remove default margin */
 }
 
-p.mission,p.purpose{
-  margin-right: 35px;
+.mission,
+.purpose {
+  font-size: 16px;
+  color: #333; /* Adjust text color */
 }
 
-.mission-statement,.purpose-statement{
-  margin-left:35px;
+@media (max-width: 768px) {
+  .statements {
+    padding: 10px; /* Adjust overall padding for smaller screens */
+  }
+
+  .mission-statement,
+  .purpose-statement {
+    padding: 15px; /* Adjust padding within statements */
+  }
+
+  .statement-title {
+    font-size: 16px; /* Adjust title font size */
+  }
+
+  .mission,
+  .purpose {
+    font-size: 14px; /* Adjust content font size */
+  }
 }
-  
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -146,9 +237,9 @@ a.btn.btn-primary.mt-3:hover {
 
 
 .goback-button {
-  background-color: #466730;
+  background-color: #210162;
   color: #FFFCF2;
-  border-color: #466730;
+  border-color: #210162;
   border-radius: 3px;
   margin: 25px;
 
@@ -156,8 +247,8 @@ a.btn.btn-primary.mt-3:hover {
 
 .goback-button:hover {
   background-color: #FFFCF2;
-  color: #466730;
-  border-color: #466730;
+  color: #210162;
+  border-color: #210162;
 }
 
 
@@ -310,7 +401,7 @@ a.btn.btn-primary.mt-3:hover {
 }
 
 .generated-message {
-  background-color: #95da67;
+  background-color: #FFFCF2;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
