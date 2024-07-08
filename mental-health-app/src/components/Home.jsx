@@ -1,6 +1,7 @@
 import React from 'react';
 import Resources from './Resources';
 import Mission from './Mission';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -25,9 +26,9 @@ const Home = () => {
                     <p className="subtitle-text" style={{ fontSize: "18px", color: "#210162", width:"35rem"}}>
                         SoulSupport is dedicated to fostering a sense of understanding and empowerment through every conversation. Join us as we strive to make mental wellness accessible, one chat at a time.
                     </p>
-                    <div className="button-container">
-                        <button className='signup-button'>SIGN UP</button>
-                        <button className='signin-button'>SIGN IN</button>
+                    <div className="button-container" >
+                        <Link to="/userauth" className='signup-button-on-home' >SIGN UP</Link>
+                        <Link to="/userauth" className='signin-button-on-home'>SIGN IN</Link>
                     </div>
                 </div>
             </div>

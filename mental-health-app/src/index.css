@@ -18,7 +18,7 @@ body {
 }
 
 
-/* CSS for the home component */
+
 /* Home.css */
 .home {
   position: relative;
@@ -51,6 +51,35 @@ body {
   padding-left: 20px; 
 }
 
+
+a.signup-button-on-home,
+a.signin-button-on-home {
+  background-color: #210162;
+  border-color: #210162;
+  color: #FFFCF2;
+  border-radius: 10px;
+  height: 45px;
+  width: 90px;
+  display: flex;
+  align-items:center;
+  padding: 15px;
+  text-decoration:none;
+
+}
+
+.signup-button-on-home:hover,
+.signin-button-on-home:hover
+{
+  background-color: #FFD147;
+  color: #210162;
+  border-radius: 10px;
+  border-color: #210162;
+  
+}
+
+
+
+
 .title-text {
   font-size: 45px;
   color: #210162;
@@ -68,6 +97,8 @@ body {
   gap: 20px; 
 }
 
+
+
 button.signup-button,
 button.signin-button {
   background-color: #210162;
@@ -82,7 +113,7 @@ button.signin-button {
 
 button.signup-button:hover,
 button.signin-button:hover {
-  background-color: #FFFCF2;
+  background-color: #FFD147;
   color: #210162;
   border-color: #210162;
 }
@@ -230,7 +261,7 @@ a.btn.btn-primary.mt-3 {
 }
 
 a.btn.btn-primary.mt-3:hover {
-  background-color: #FFFCF2;
+  background-color: #FFD147;
   color: #210162;
   border-color: #210162;
 }
@@ -246,7 +277,7 @@ a.btn.btn-primary.mt-3:hover {
 }
 
 .goback-button:hover {
-  background-color: #FFFCF2;
+  background-color: #FFD147;
   color: #210162;
   border-color: #210162;
 }
