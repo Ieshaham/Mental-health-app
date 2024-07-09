@@ -16,7 +16,7 @@ const Resources = () => {
                         <p className="card-text" style={{ color: "#210162" }}> Our chatbot offers instant support, coping strategies, and resources for your mental health journey. 
                         Whether you're feeling overwhelmed, anxious, or just need someone to talk to, our chatbot is available 24/7 to listen and assist.
                       </p>
-                            <Link to="/gemini" className="btn btn-primary mt-3">Chat Now</Link>
+                            <Link to="/userauth" className="btn btn-primary mt-3">Chat Now</Link>
                     </div>
                 </div>
             </div>

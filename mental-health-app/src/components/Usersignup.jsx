@@ -1,6 +1,8 @@
+// src/components/Usersignup.jsx
+
 import React, { useState } from 'react';
 import { initializeApp } from 'firebase/app';
-import { getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import { useHistory } from 'react-router-dom';
 import GoBack from './GoBack';
 
@@ -16,36 +18,27 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-const UserAuth = () => {
+const Usersignup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
   const history = useHistory();
 
-  const handleLogin = async () => {
+  const handleSignup = async () => {
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      // Redirect to home page after successful login
-      history.push('/gemini');
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      // Optionally, you can do something with userCredential.user
+      // Redirect to home page or user profile page after successful sign-up
+      history.push('/');
     } catch (error) {
       setError(error.message);
     }
   };
 
-  const handleLogout = async () => {
-    try {
-      await signOut(auth);
-      // Redirect to login page after successful logout
-      history.push('/login'); // Assuming you have a login route
-    } catch (error) {
-      console.error('Logout error:', error);
-    }
-  };
-
   return (
     <div>
-      <GoBack />
-      <h2>Firebase Authentication</h2>
+        < GoBack />
+      <h2>User Sign Up</h2>
 
       <input
         type="email"
@@ -59,11 +52,11 @@ const UserAuth = () => {
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Password"
       />
-      <button className='signin-button' onClick={handleLogin}>Log In</button>
-      <button className='signup-button' onClick={handleLogout}>Log Out</button>
+      <button className='signup-button' onClick={handleSignup}>Sign Up</button>
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
   );
 };
 
-export default UserAuth;
+export default Usersignup;
+

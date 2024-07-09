@@ -27,7 +27,7 @@ const Home = () => {
                         SoulSupport is dedicated to fostering a sense of understanding and empowerment through every conversation. Join us as we strive to make mental wellness accessible, one chat at a time.
                     </p>
                     <div className="button-container" >
-                        <Link to="/userauth" className='signup-button-on-home' >SIGN UP</Link>
+                        <Link to="/usersignup" className='signup-button-on-home' >SIGN UP</Link>
                         <Link to="/userauth" className='signin-button-on-home'>SIGN IN</Link>
                     </div>
                 </div>
