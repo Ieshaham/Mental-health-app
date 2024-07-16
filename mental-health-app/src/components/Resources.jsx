@@ -16,12 +16,12 @@ const Resources = () => {
                         <p className="card-text" style={{ color: "#210162" }}> Our chatbot offers instant support, coping strategies, and resources for your mental health journey. 
                         Whether you're feeling overwhelmed, anxious, or just need someone to talk to, our chatbot is available 24/7 to listen and assist.
                       </p>
-                            <Link to="/userauth" className="btn btn-primary mt-3">Chat Now</Link>
+                            <Link to="/gemini" className="btn btn-primary mt-3">Chat Now</Link>
                     </div>
                 </div>
             </div>
 {/* insert Youtube video */}
-            <div className='video' style={{ display: "flex", justifyContent: "center", alignItems: "center", backgroundColor:"#CFC8EF", height:"370px", width:"auto" }}>
+            <div className='video' style={{ display: "flex", justifyContent: "center", alignItems: "center", backgroundColor:"#f9f9f9", height:"370px", width:"auto" , boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}}>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/B1Bn9OWDqF0?si=22xpxXX5TRo5JddB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
         </div>

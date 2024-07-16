@@ -6,13 +6,13 @@ const Mission = () => {
       <div className='mission-statement'>
         <p className="statement-title">Our Mission</p>
         <p className="mission">
-          At SoulSupport, our mission is to empower and uplift the Black community by providing comprehensive mental health resources and support. We are dedicated to fostering a culture of mental wellness, advocacy, and healing. Through accessible tools, education, and compassionate outreach, we strive to dismantle stigmas surrounding mental health in the Black community and promote resilience, self-discovery, and collective healing.
+        At SoulSupport, our chatbot app is dedicated to promoting mental health and well-being for all users. We provide comprehensive resources and support to empower individuals in their journey towards mental wellness. Through accessible tools, personalized guidance, and compassionate interaction, we strive to support users in overcoming challenges, fostering resilience, and promoting self-discovery and healing.
         </p>
       </div>
       <div className='purpose-statement'>
         <p className="statement-title">Our Purpose</p>
         <p className='purpose'>
-          Our purpose at SoulSupport is to bridge the gap in mental health care within the Black community by advocating for equitable access to resources and destigmatizing discussions around mental well-being. Through culturally sensitive support, education, and community engagement, we empower individuals to prioritize their mental wellness. Our vision is a future where mental health support is accessible, inclusive, and celebrated within the Black community.
+        Our purpose at SoulSupport is to bridge gaps in mental health care by advocating for equitable access to resources and destigmatizing discussions around mental well-being for all. Through culturally sensitive support, education, and community engagement, we empower individuals to prioritize their mental wellness. Our vision is a future where mental health support is accessible, inclusive, and celebrated universally.
         </p>
       </div>
     </div>

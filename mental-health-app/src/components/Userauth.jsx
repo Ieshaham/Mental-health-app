@@ -45,25 +45,43 @@ const UserAuth = () => {
   return (
     <div>
       <GoBack />
-      <h2>Firebase Authentication</h2>
+      <div style={{
+      padding: '20px',
+      borderRadius: '8px',
 
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email"
-      />
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="Password"
-      />
-      <button className='signin-button' onClick={handleLogin}>Log In</button>
-      <button className='signup-button' onClick={handleLogout}>Log Out</button>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}>
+      <div className="card-sign-in"
+      style={{ width: '18rem',
+         backgroundColor: '#f9f9f9', 
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}}>
+        <div className="card-body">
+          <h5 className="card-title">Sign In</h5>
+          <h6 className="card-subtitle mb-2 text-body-secondary">to continue to chat</h6>
+          
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+          />
+          <button className='signin-button' onClick={handleLogin}>Log In</button>
+          <button className='signup-button' onClick={handleLogout}>Log Out</button>
+          {error && <p style={{ color: 'red' }}>{error}</p>}
+        </div>
+      </div>
+    </div>
     </div>
   );
 };
 
 export default UserAuth;
+

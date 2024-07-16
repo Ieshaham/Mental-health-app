@@ -1,5 +1,3 @@
-// src/components/Usersignup.jsx
-
 import React, { useState } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
@@ -37,26 +35,39 @@ const Usersignup = () => {
 
   return (
     <div>
-        < GoBack />
-      <h2>User Sign Up</h2>
+    <GoBack />
+    <div style={{
+      padding: '20px',
+      borderRadius: '8px',
 
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email"
-      />
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="Password"
-      />
-      <button className='signup-button' onClick={handleSignup}>Sign Up</button>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}>
+      <div className="card" style={{ width: '18rem', backgroundColor: '#f9f9f9', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
+        <div className="card-body">
+          <h5 className="card-title">User Sign Up</h5>
+          <h6 className="card-subtitle mb-2 text-body-secondary">to continue to chat</h6>
+
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+          />
+          <button className="signup-button" onClick={handleSignup}>Sign Up</button>
+          {error && <p style={{ color: 'red' }}>{error}</p>}
+        </div>
+      </div>
+    </div>
     </div>
   );
 };
 
 export default Usersignup;
-
