@@ -87,7 +87,7 @@ const Gemini = () => {
                     placeholder="Type your message here"
                     className="user-input"
                 />
-                <button className="send-button"onClick={handleGenerateText} >Send<i class="fas fa-paper-plane"></i> </button>
+                <button className="send-button"onClick={handleGenerateText} >Send<i className="fas fa-paper-plane"></i> </button>
             </div>
             {loading && <p className="loading">Loading...</p>}
         </div>

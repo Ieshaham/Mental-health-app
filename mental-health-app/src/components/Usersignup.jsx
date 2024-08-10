@@ -25,8 +25,7 @@ const Usersignup = () => {
   const handleSignup = async () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      // Optionally, you can do something with userCredential.user
-      // Redirect to home page or user profile page after successful sign-up
+  
       history.push('/');
     } catch (error) {
       setError(error.message);

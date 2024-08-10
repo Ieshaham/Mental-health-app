@@ -6,7 +6,7 @@ const Resources = () => {
         <div id="resources">
             <h2 style={{ color: "#210162", marginLeft:"30px", marginTop:"20px", fontSize:"20px", fontWeight:"bold"}}>Resources</h2>
 
-{/* chatbot resources card */}
+
             <div className="card-container">
                 <div className="card" style={{ width: "500px", borderColor: "210162", backgroundColor: "white" }}>
                     <img src='/5471.jpg'  style={{ borderRadius: "100px" }} /> 

@@ -1,12 +1,9 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-
-/* Body styles */
+/* Base Styles - Mobile First */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 /* Header styles */
@@ -17,13 +14,10 @@ body {
   text-align: center;
 }
 
-
-
-/* Home.css */
 .home {
   position: relative;
   background-color: #FFFFFF;
-  padding: 20px;
+  padding: 10px;
 }
 
 .soul-support-container {
@@ -34,9 +28,9 @@ body {
 }
 
 .health-pic-container {
-  flex: 0 0 50%; /* Take up half of the container width */
-  max-width: 50%; /* Ensure image container doesn't exceed half of the container */
-  padding-right: 20px; 
+  flex: 0 0 100%; /* Full width for mobile */
+  max-width: 100%;
+  padding-right: 0;
 }
 
 .health-pic {
@@ -46,11 +40,10 @@ body {
 }
 
 .main-page-title {
-  flex: 0 0 50%; /* Take up half of the container width */
-  max-width: 50%; /* Ensure title container doesn't exceed half of the container */
-  padding-left: 20px; 
+  flex: 0 0 100%; /* Full width for mobile */
+  max-width: 100%;
+  padding-left: 0;
 }
-
 
 a.signup-button-on-home,
 a.signin-button-on-home {
@@ -58,57 +51,48 @@ a.signin-button-on-home {
   border-color: #210162;
   color: #FFFCF2;
   border-radius: 10px;
-  height: 45px;
-  width: 90px;
+  height: auto;
+  width: 100%; /* Full width for mobile */
   display: flex;
-  align-items:center;
-  padding: 15px;
-  text-decoration:none;
-
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .signup-button-on-home:hover,
-.signin-button-on-home:hover
-{
+.signin-button-on-home:hover {
   background-color: #FFD147;
   color: #210162;
-  border-radius: 10px;
   border-color: #210162;
-  
 }
 
-
-
-
 .title-text {
-  font-size: 45px;
+  font-size: 15px; /* Adjusted for mobile */
   color: #210162;
   margin-bottom: 10px; 
 }
 
 .subtitle-text {
-  font-size: 18px;
+  font-size: 10px; /* Adjusted for mobile */
   color: #210162;
   margin-bottom: 20px; 
 }
 
 .button-container {
   display: flex;
-  gap: 20px; 
+  gap: 15px; /* Adjust button spacing for mobile */
 }
-
-
 
 button.signup-button,
 button.signin-button {
   background-color: #210162;
   border-color: #210162;
   color: #FFFCF2;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
-  height: 45px;
-  width: 90px;
+  height: auto;
+  width: 100%; /* Full width for mobile */
+  padding: 10px;
 }
 
 button.signup-button:hover,
@@ -117,27 +101,6 @@ button.signin-button:hover {
   color: #210162;
   border-color: #210162;
 }
-
-@media (min-width: 768px) {
-  /* Adjust layout for larger screens */
-  .soul-support-container {
-      flex-direction: row; /* Display items side by side on larger screens */
-  }
-
-  .health-pic-container {
-      flex: 0 0 50%; /* Take up half of the container width */
-      max-width: 50%; /* Ensure image container doesn't exceed half of the container */
-      padding-right: 20px; /* Add spacing between health pic and main page title */
-  }
-
-  .main-page-title {
-      flex: 0 0 50%; /* Take up half of the container width */
-      max-width: 50%; /* Ensure title container doesn't exceed half of the container */
-      padding-left: 20px; /* Add spacing between health pic and main page title */
-      font-size: 14px;
-  }
-}
-
 
 footer {
   position: fixed;
@@ -149,36 +112,28 @@ footer {
   text-align: center;
 }
 
-
-
-
 .container-fluid-footer {
   color: #210162;
   background-color: #FFFFFF;
-
 }
-
 
 .gif-container {
   flex: 1;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: center; /* Center the GIF horizontally */
   align-items: center; /* Vertically center the GIF */
-  height: 40rem;
-  width:50rem;
-  position: relative;
-  left:15rem;
- 
+  height: auto; /* Adjust height for mobile */
+  width: 100%; /* Full width for mobile */
+  margin: 0 auto;
+  left: 0;
 }
-
 
 #navbarNavDropdown {
   justify-content: end;
   align-items: end;
 }
 
-
-/* Mission.css (or your preferred CSS file) */
+/* Mission.css */
 .statements {
   display: flex;
   flex-direction: column;
@@ -188,13 +143,13 @@ footer {
 .mission-statement,
 .purpose-statement {
   background-color: #f9f9f9; /* Optional: Add background color to differentiate sections */
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
 }
 
 .statement-title {
-  font-size: 18px;
+  font-size: 16px; /* Adjusted for mobile */
   color: #210162;
   font-weight: bold;
   margin-top: 0; /* Remove default margin */
@@ -202,28 +157,8 @@ footer {
 
 .mission,
 .purpose {
-  font-size: 16px;
+  font-size: 14px; /* Adjusted for mobile */
   color: #333; /* Adjust text color */
-}
-
-@media (max-width: 768px) {
-  .statements {
-    padding: 10px; /* Adjust overall padding for smaller screens */
-  }
-
-  .mission-statement,
-  .purpose-statement {
-    padding: 15px; /* Adjust padding within statements */
-  }
-
-  .statement-title {
-    font-size: 16px; /* Adjust title font size */
-  }
-
-  .mission,
-  .purpose {
-    font-size: 14px; /* Adjust content font size */
-  }
 }
 
 .card-container {
@@ -235,8 +170,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-
- 
 }
 
 .card {
@@ -251,8 +184,6 @@ footer {
   margin: 8rem;
 }
 
-
-
 a.btn.btn-primary.mt-3 {
   background-color: #210162;
   border-color: #210162;
@@ -266,14 +197,14 @@ a.btn.btn-primary.mt-3:hover {
   border-color: #210162;
 }
 
-
 .goback-button {
   background-color: #210162;
   color: #FFFCF2;
   border-color: #210162;
   border-radius: 3px;
   margin: 25px;
-
+  height: auto;
+  width: 100%; /* Full width for mobile */
 }
 
 .goback-button:hover {
@@ -282,86 +213,7 @@ a.btn.btn-primary.mt-3:hover {
   border-color: #210162;
 }
 
-
-
-/* api page css */
-
-.tabs {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.tabs button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  margin: 0 10px;
-  font-size: 16px;
-  color: #606060;
-}
-
-.tabs button.active {
-  color: #ff0000; /* Change color to match YouTube's accent color */
-}
-
-.videos-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.video-item {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Add margin to the bottom */
-}
-
-
-.video-item iframe {
-  width: 100%;
-  height: 200px;
-  
-}
-
-.video-item h3 {
-  margin: 10px;
-  font-size: 16px;
-}
-
-.video-item p {
-  margin: 0 10px 10px;
-  font-size: 14px;
-  color: #606060;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; /* Add margin to the top */
-}
-
-.pagination button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 5px 10px;
-  margin: 0 5px; /* Add margin between buttons */
-  font-size: 14px;
-  color: #606060;
-}
-
-.pagination button.active {
-  color: #ff0000; /* Change color to match YouTube's accent color */
-}
-
-
 /* GEMINI CHATBOT */
-
-
 .loading {
   font-style: italic;
   color: #666;
@@ -377,7 +229,7 @@ a.btn.btn-primary.mt-3:hover {
 .messages {
   flex: 1; /* Allow messages container to expand to fill remaining space */
   overflow-y: auto; /* Add scrollbar for overflow */
-  margin: 0 150px;
+  margin: 0 10px; /* Adjust margin for mobile */
 }
 
 .user-input-container {
@@ -385,14 +237,13 @@ a.btn.btn-primary.mt-3:hover {
   bottom: 15%;
   left: 50%;
   transform: translate(-50%, 50%);
-  width: 60%;
+  width: 90%; /* Full width for mobile */
   background-color: #f9f9f9;
   padding: 10px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
 }
-
 
 .user-input {
   flex: 1; /* Allow input to expand to fill remaining space */
@@ -412,9 +263,7 @@ a.btn.btn-primary.mt-3:hover {
   font-size: 18px;
   height: 45px;
   width: 50px;
-
 }
-
 
 .send-button:hover {
   background-color: #FFFCF2;
@@ -439,10 +288,91 @@ a.btn.btn-primary.mt-3:hover {
   align-self: flex-start;
 }
 
-.card-sign-in{
+.card-sign-in {
   background-color: #f9f9f9; /* Optional: Add background color to differentiate sections */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Media Queries */
+
+/* Tablet Devices (Min-width: 768px) */
+@media (min-width: 768px) {
+  .home {
+    padding: 20px;
+  }
+
+  .health-pic-container,
+  .main-page-title {
+    flex: 0 0 50%; /* Half width on tablets and larger screens */
+    max-width: 50%;
+  }
+
+  .title-text {
+    font-size: 36px; /* Adjust font size for tablet */
+  }
+
+  .subtitle-text {
+    font-size: 16px; /* Adjust font size for tablet */
+  }
+
+  .button-container {
+    gap: 15px; /* Adjust button spacing */
+  }
+
+  .gif-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    left: 0;
+  }
+}
+
+/* Large Desktops (Min-width: 1024px) */
+@media (min-width: 1024px) {
+  .home {
+    padding: 30px;
+  }
+
+  .health-pic-container,
+  .main-page-title {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .title-text {
+    font-size: 45px; /* Larger font size for larger screens */
+  }
+
+  .subtitle-text {
+    font-size: 18px; /* Larger font size for larger screens */
+  }
+
+  .gif-container {
+    width: 50rem;
+    height: 40rem;
+    margin: 0 auto;
+    left: 15rem;
+  }
+}
+
+/* Extra-Large Desktops (Min-width: 1440px) */
+@media (min-width: 1440px) {
+  .home {
+    padding: 40px;
+  }
+
+  .title-text {
+    font-size: 50px; /* Even larger font size for extra-large screens */
+  }
+
+  .subtitle-text {
+    font-size: 20px;
+  }
+
+  .gif-container {
+    width: 60rem;
+    height: 50rem;
+  }
+}
