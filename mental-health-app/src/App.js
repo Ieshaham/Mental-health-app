@@ -8,7 +8,7 @@ import Mission from './components/Mission';
 import Gemini from './components/Gemini';
 import Userauth from './components/Userauth';
 import Usersignup from './components/Usersignup';
-import GoBack from './components/GoBack';
+
 
 
 const App = () => {

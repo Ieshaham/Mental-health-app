@@ -8,7 +8,7 @@ const Resources = () => {
 
 
             <div className="card-container">
-                <div className="card" style={{ width: "500px", borderColor: "210162", backgroundColor: "white" }}>
+                <div className="card" style={{ width: "350px", borderColor: "210162", backgroundColor: "white" }}>
                     <img src='/5471.jpg'  style={{ borderRadius: "100px" }} /> 
             
                     <div className="card-body">

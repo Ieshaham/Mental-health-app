@@ -52,12 +52,13 @@ a.signin-button-on-home {
   color: #FFFCF2;
   border-radius: 10px;
   height: auto;
-  width: 100%; /* Full width for mobile */
-  display: flex;
+  width: 20%;
+
   align-items: center;
   padding: 10px;
   text-decoration: none;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .signup-button-on-home:hover,
@@ -91,7 +92,6 @@ button.signin-button {
   color: #FFFCF2;
   border-radius: 10px;
   height: auto;
-  width: 100%; /* Full width for mobile */
   padding: 10px;
 }
 
@@ -103,7 +103,7 @@ button.signin-button:hover {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: #FFFFFF;
@@ -204,7 +204,6 @@ a.btn.btn-primary.mt-3:hover {
   border-radius: 3px;
   margin: 25px;
   height: auto;
-  width: 100%; /* Full width for mobile */
 }
 
 .goback-button:hover {
@@ -214,78 +213,92 @@ a.btn.btn-primary.mt-3:hover {
 }
 
 /* GEMINI CHATBOT */
-.loading {
-  font-style: italic;
-  color: #666;
-}
 
 .gemini-container {
-  position: relative; /* Ensure relative positioning for absolute positioning within */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px; 
+  margin: 0 auto;  
+  background-color: #FFFCF2; 
+  border-radius: 10px; 
+  border: 1px solid #ddd; 
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+  height: 100vh; 
+  position: relative; 
+  padding-bottom: 60px; 
 }
+
 
 .messages {
-  flex: 1; /* Allow messages container to expand to fill remaining space */
-  overflow-y: auto; /* Add scrollbar for overflow */
-  margin: 0 10px; /* Adjust margin for mobile */
-}
-
-.user-input-container {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 90%; /* Full width for mobile */
-  background-color: #f9f9f9;
-  padding: 10px;
-  box-sizing: border-box;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto; /* Scroll if content overflows */
+  flex-grow: 1; /* Grow to fill available space */
 }
 
-.user-input {
-  flex: 1; /* Allow input to expand to fill remaining space */
-  border: 2px solid #210162;
-  border-radius: 5px;
-  padding: 10px;
-  margin-right: 10px;
-}
-
-.send-button {
-  background-color: #210162;
-  color: #FFFCF2;
-  border-color: #210162;
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 0;
-  font-size: 18px;
-  height: 45px;
-  width: 50px;
-}
-
-.send-button:hover {
-  background-color: #FFFCF2;
-  color: #210162;
-  border-color: #210162;
-}
 
 .user-message {
-  background-color: #210162;
-  color: white;
+  align-self: flex-end; 
+  background-color: #210162; 
+  color: #FFFCF2;
   padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  align-self: flex-end;
+  border-radius: 10px;
+  max-width: 80%; 
+  word-break: break-word; 
 }
 
 .generated-message {
-  background-color: #FFFCF2;
+  align-self: flex-start; 
+  background-color: #f1f8e9; 
+  color: #210162; 
   padding: 10px;
+  border-radius: 10px;
+  max-width: 80%; /* Limit width for better readability */
+  word-break: break-word; /* Handle long words */
+}
+
+
+.user-input-container {
+  position: fixed;
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  background-color: #FFFCF2; 
+  padding: 10px; 
+  border-top: 1px solid #ddd; 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  gap: 10px;
+  z-index: 10; 
+}
+
+
+.user-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  margin-bottom: 5px;
-  align-self: flex-start;
+}
+
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #210162; 
+  color: #FFFCF2; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #FFD147; 
+}
+
+
+.loading {
+  color: #666;
 }
 
 .card-sign-in {
@@ -318,7 +331,8 @@ a.btn.btn-primary.mt-3:hover {
   }
 
   .button-container {
-    gap: 15px; /* Adjust button spacing */
+    gap: 15px; 
+  
   }
 
   .gif-container {
