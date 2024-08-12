@@ -53,7 +53,7 @@ a.signin-button-on-home {
   border-radius: 10px;
   height: auto;
   width: 20%;
-
+  margin-bottom: 5px;
   align-items: center;
   padding: 10px;
   text-decoration: none;
@@ -103,7 +103,7 @@ button.signin-button:hover {
 }
 
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #FFFFFF;
@@ -170,6 +170,15 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card-body-on-auth{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 18rem;
+  width: auto;
 }
 
 .card {
@@ -328,6 +337,7 @@ a.btn.btn-primary.mt-3:hover {
 
   .subtitle-text {
     font-size: 16px; /* Adjust font size for tablet */
+    width:450px;
   }
 
   .button-container {
